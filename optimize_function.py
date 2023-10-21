@@ -134,6 +134,7 @@ def calculate_tonnage(data: pd.DataFrame):
 
     return data
 
+
 def work_with_file(path_to_csv: str, final_filname: str = 'updated_data'):
     if not os.path.exists(path_to_csv):
         raise Exception("Указан неверный путь к файлу или файла не существует")
@@ -149,14 +150,18 @@ def work_with_file(path_to_csv: str, final_filname: str = 'updated_data'):
     my_data = start_second_task(my_data)
     my_data = start_calculating(my_data, param='quantity_limit')
     del my_data['Unnamed: 0']
-    
+
     my_data.to_csv(f'{final_filname}.csv')
 
     return f'{final_filname}.csv'
 
 
 
+
+
+
 def main():
+    print(' Вас приветствует оптимист! '.center(100, '='))
     path_to_csv = input('Введите путь к файлу с данными: ')
     name_for_new_file = input('Введите название файла с результатом оптимизации (без постфикса .csv): ')
 
