@@ -15,7 +15,7 @@
 
 1. Выполните в консоли программу:
 
-`git clone [https://github.com/ArTeria21/ensemble_of_trees_optimization](https://github.com/ArTeria21/ensemble_of_trees_optimization)`
+`git clone https://github.com/ArTeria21/ensemble_of_trees_optimization`
 
 После этого на вашем компьютере появится папка со всеми материалами проекта
 
